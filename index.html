@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pizza Center</title>
+</head>
+<body>
+	<h1>Pizza Center</h1>
+	<div class="pizzaContainer">
+		<div class="pizza">
+			<img class="pizzaIMG" id="pizzaSmallIMG" src="pizza.png">
+			<br>
+			<button type="button" class="pizzabtn" onclick="voegPizza('klein');" id="small-pizza">klein Pizza <br> &euro; 6.95</button>
+			<p class="counter" id="counterSmall">0</p>
+		</div>
+		<div class="pizza">
+			<img class="pizzaIMG" id="pizzaMediumIMG" src="pizza.png">
+			<br>
+			<button type="button" class="pizzabtn" onclick="voegPizza('medium');" id="medium-pizza">Medium Pizza <br> &euro; 9.50</button>
+			<p class="counter" id="counterMedium">0</p>
+		</div>
+		<div class="pizza">
+			<img class="pizzaIMG" id="pizzaLargeIMG" src="pizza.png">
+			<br>
+			<button type="button" class="pizzabtn" onclick="voegPizza('large');" id="large-pizza">Grote Pizza <br> &euro; 12.50</button>
+			<p class="counter" id="counterLarge">0</p>
+		</div>
+	</div>
+	<div class="totaal">
+		<p class="Totaal" id="TotaalP">Totaal:</p>
+		<p class="Totaal" id="TotaalResult"><span>&euro; </span>0</p>
+	</div>
+
+
+
+<script type="text/javascript" src="script.js"></script>
+<style type="text/css">
+	html, body{
+		padding: 0;
+		margin: 0;
+		background-color: #005574;
+	}
+	h1{
+		text-align: center;
+		color: #fff;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	div.pizzaContainer{
+		margin: auto;
+		max-width: 800px;
+	}
+	div.pizza{
+		display: inline-block;
+		width: 30%;
+		margin-left: 20px;
+		text-align: center;
+	}
+	#pizzaSmallIMG{
+		width: 70px;
+	}
+	#pizzaMediumIMG{
+		width: 120px;
+	}
+	#pizzaLargeIMG{
+		width: 180px;
+	}
+	.pizzabtn{
+		width: 150px;
+		padding: 3px 5px;
+		border: none;
+		background-color: #D0021B;
+		margin-top: 10px;
+		color: #fff;
+		font-weight: 500;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.counter{
+		text-align: center;
+		color: #fff;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	div.totaal{
+		text-align: center;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #fff;
+	}
+</style>
+</body>
+</html>
